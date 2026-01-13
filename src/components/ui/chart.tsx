@@ -18,6 +18,16 @@ export type ChartConfig = {
   )
 }
 
+type PayloadItem = {
+  dataKey?: string
+  name?: string
+  value?: string | number
+  color?: string
+  fill?: string
+  payload?: Record<string, unknown>
+  [key: string]: unknown
+}
+
 type ChartContextProps = {
   config: ChartConfig
 }
@@ -120,15 +130,15 @@ function ChartTooltipContent({
   labelKey,
 }: {
   active?: boolean
-  payload?: any[]
+  payload?: PayloadItem[]
   label?: string
   className?: string
   indicator?: "line" | "dot" | "dashed"
   hideLabel?: boolean
   hideIndicator?: boolean
-  labelFormatter?: (value: unknown, payload: unknown[]) => React.ReactNode
+  labelFormatter?: (value: unknown, payload: PayloadItem[]) => React.ReactNode
   labelClassName?: string
-  formatter?: (value: unknown, name: string, item: unknown, index: number, payload: unknown) => React.ReactNode
+  formatter?: (value: unknown, name: string, item: PayloadItem, index: number, payload: unknown) => React.ReactNode
   color?: string
   nameKey?: string
   labelKey?: string
@@ -266,7 +276,7 @@ function ChartLegendContent({
 }: {
   className?: string
   hideIcon?: boolean
-  payload?: unknown[]
+  payload?: PayloadItem[]
   verticalAlign?: "top" | "bottom"
   nameKey?: string
 }) {
