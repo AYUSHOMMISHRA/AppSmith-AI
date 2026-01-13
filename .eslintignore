@@ -1,0 +1,12 @@
+# Prisma generated files
+src/generated/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+
+# Sandbox templates
+sandbox-templates/

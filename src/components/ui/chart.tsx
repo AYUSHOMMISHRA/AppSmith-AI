@@ -126,9 +126,9 @@ function ChartTooltipContent({
   indicator?: "line" | "dot" | "dashed"
   hideLabel?: boolean
   hideIndicator?: boolean
-  labelFormatter?: (value: any, payload: any[]) => React.ReactNode
+  labelFormatter?: (value: unknown, payload: unknown[]) => React.ReactNode
   labelClassName?: string
-  formatter?: (value: any, name: string, item: any, index: number, payload: any) => React.ReactNode
+  formatter?: (value: unknown, name: string, item: unknown, index: number, payload: unknown) => React.ReactNode
   color?: string
   nameKey?: string
   labelKey?: string
@@ -266,7 +266,7 @@ function ChartLegendContent({
 }: {
   className?: string
   hideIcon?: boolean
-  payload?: any[]
+  payload?: unknown[]
   verticalAlign?: "top" | "bottom"
   nameKey?: string
 }) {
