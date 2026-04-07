@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="public/logo.svg" alt="Vibe Logo" width="80" height="80">
-  <h3>Build something with Vibe</h3>
+  <h3>Build something with AppSmith AI</h3>
   <p>Create apps and websites by chatting with AI</p>
 </div>
 
