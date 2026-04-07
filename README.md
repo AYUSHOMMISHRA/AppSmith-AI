@@ -1,4 +1,4 @@
-# Vibe - AI-Powered Code Generation Platform
+# AppSmith AI - AI-Powered Code Generation Platform
 
 <div align="center">
   <img src="public/logo.svg" alt="Vibe Logo" width="80" height="80">
@@ -8,7 +8,7 @@
 
 ## Overview
 
-Vibe is a modern AI-powered code generation platform that transforms natural language descriptions into fully functional Next.js applications. Simply describe what you want to build, and Vibe's intelligent AI agent will generate complete, production-ready code with live preview capabilities.
+AppSmith AI is a modern AI-powered code generation platform that transforms natural language descriptions into fully functional Next.js applications. Simply describe what you want to build, and Vibe's intelligent AI agent will generate complete, production-ready code with live preview capabilities.
 
 ## ✨ Key Features
 
